@@ -27,11 +27,11 @@ The project utilizes the YOLOv5 model, known for its efficiency and accuracy in 
    ```
 3. Run the Jupyter Notebook file to initialize and test the YOLOv5 model:
    ```bash
-   jupyter notebook yolov5.ipynb
+   jupyter notebook yolov511.ipynb
    ```
 4. After completing the Jupyter Notebook execution, run the Python script for real-time testing:
    ```bash
-   python yolov5.py
+   python yolov511.py
    ```
 5. Test the model using either image uploads or live video feed.
 
