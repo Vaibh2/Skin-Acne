@@ -57,9 +57,6 @@ pip install -r requirements.txt
 ## Acknowledgments
 Special thanks to the open-source YOLOv5 community for providing pre-trained models and resources.
 
-## License
-This project is licensed under the MIT License.
-
 ## **Screenshots**
 ![image](https://github.com/user-attachments/assets/4a9fd933-0318-4a76-adf2-08924586196b)
 
