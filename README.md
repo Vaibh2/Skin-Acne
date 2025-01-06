@@ -19,7 +19,7 @@ The project utilizes the YOLOv5 model, known for its efficiency and accuracy in 
 ## Steps to Execute
 1. Download the entire project zip file or clone the repository.
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/Vaibh2/Skin-Acne
    ```
 2. Download the required dependencies:
    ```bash
