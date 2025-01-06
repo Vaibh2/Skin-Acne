@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acne Detection - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Taskbar styles */
+        nav {
+            background-color: #00796b;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            background-color: #004d40;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #00796b;
+            padding: 20px;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #00796b;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #004d40;
+        }
+
+        .footer {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .feature-box {
+            display: inline-block;
+            width: 28%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-box h3 {
+            color: #00796b;
+        }
+
+        .feature-box p {
+            font-size: 1em;
+        }
+
+        .upload-form {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        .upload-form input[type="file"] {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Taskbar or Navbar -->
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('video_feed') }}">Start Video Feed</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Acne Detection Portal</h1>
+        <p>Your solution for real-time acne detection using AI and computer vision.</p>
+
+        <!-- File Upload Form -->
+        <div class="upload-form">
+            <h3>Upload an Image for Acne Detection</h3>
+            <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <br>
+                <button type="submit" class="button">Upload and Detect</button>
+            </form>
+        </div>
+        <t>
+        <!-- Feature Boxes -->
+        <div class="feature-box">
+            <h3>Real-time Detection</h3>
+            <p>Our system detects acne in real-time, providing instant feedback.</p>
+            <a href="{{ url_for('video_feed') }}" class="button">Start Video Feed</a>
+        </div>
+
+        <div class="feature-box">
+            <h3>AI-Powered</h3>
+            <p>Using YOLOv5, a powerful AI model, we ensure high accuracy in detection.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Easy to Use</h3>
+            <p>Our portal is user-friendly, offering a seamless experience for all users.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Instant Results</h3>
+            <p>Receive acne detection results instantly without any delays.</p>
+        </div>
+    </div>
+</body>
+</html>
