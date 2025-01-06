@@ -1,0 +1,7 @@
+path: ../data
+train: images
+val: images
+
+# Classes (80 COCO classes)
+nc: 6
+names: ['blackheads', 'dark spot', 'nodules', 'papules', 'pustules', 'whiteheads']
